@@ -1,0 +1,19 @@
+Process:
+LEVEL4_C
+States:
+13
+Transitions:
+LEVEL4_C = Q0,
+Q0	= (arrive.w -> Q4),
+Q1	= (arrive.w -> Q5),
+Q2	= (pickup -> Q3),
+Q3	= (pickupsuccess -> Q7),
+Q4	= (move.e -> Q6),
+Q5	= (putdown -> Q9),
+Q6	= (arrive.m -> Q8),
+Q7	= (move.w -> Q10),
+Q8	= (move.e -> Q11),
+Q9	= (putsuccess -> Q4),
+Q10	= (arrive.m -> Q12),
+Q11	= (arrive.e -> Q2),
+Q12	= (move.w -> Q1).
